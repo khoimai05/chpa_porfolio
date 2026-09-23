@@ -64,6 +64,7 @@ export default function Projects() {
     };
     const down = (e) => {
       if (e.pointerType === "mouse" && e.button !== 0) return;
+      if (e.target.closest("a, button")) return;
       drag.current = {
         id: e.pointerId,
         x: e.clientX,
