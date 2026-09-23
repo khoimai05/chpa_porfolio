@@ -133,9 +133,11 @@ export default function Projects() {
               <h2>{p.title}</h2>
               <p className="meta">{p.meta}</p>
               <p className="blurb">{p.blurb}</p>
-              <a className="more" href={p.href} target="_blank" rel="noopener">
-                {p.link} →
-              </a>
+              {p.href && (
+                <a className="more" href={p.href} target="_blank" rel="noopener">
+                  {p.link} →
+                </a>
+              )}
             </div>
           </article>
         ))}

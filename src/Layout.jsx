@@ -1,7 +1,6 @@
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Cursor from "./Cursor.jsx";
-import { MAIL } from "./data.js";
 
 export default function Layout() {
   const loc = useLocation();
@@ -38,8 +37,7 @@ export default function Layout() {
           </NavLink>
           <NavLink to="/experience">Experience</NavLink>
           <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/resume">Résumé</NavLink>
-          <a href={MAIL}>Mail</a>
+          <NavLink to="/resume">Resume</NavLink>
           <button type="button" onClick={() => setDark((d) => !d)}>
             {dark ? "Light" : "Dark"}
           </button>

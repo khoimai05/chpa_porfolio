@@ -48,17 +48,6 @@ export const EXPERIENCE = [
     ],
     img: "/images/ey.jpg",
   },
-  {
-    id: "pd",
-    role: "Real Estate Analyst",
-    firm: "Project Destined",
-    dates: "2025",
-    place: "Remote",
-    bullets: [
-      "Underwrote a 31-unit apartment ($17M): 10-year model covering rents, costs, $5.1M renovations, and the downside case.",
-    ],
-    img: "/images/pd.jfif",
-  },
 ];
 
 export const EDUCATION = [
@@ -77,6 +66,14 @@ export const CERTS = [
 ];
 
 export const PROJECTS = [
+  {
+    id: "pd",
+    title: "Project Destined",
+    meta: "Real estate · $17M underwrite · 31 units",
+    blurb:
+      "10-year model covering rents, costs, $5.1M renovations, and the downside case.",
+    img: "/images/pd.jfif",
+  },
   {
     id: "oscars",
     title: "Movie Awards and Ratings",

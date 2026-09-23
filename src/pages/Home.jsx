@@ -7,17 +7,14 @@ export default function Home() {
       <header className="hero">
         <div className="hero-inner">
           <div>
-            <p className="eyebrow">Purdue University · Class of 2027</p>
+            <p className="eyebrow">Purdue University</p>
             <h1>Anh Cao</h1>
 
             <p className="lede">
               Senior at Purdue double majoring in Finance &amp; Business Analytics.
             </p>
             <div className="cta">
-              <a className="solid" href={MAIL}>
-                Mail
-              </a>
-              <a href={LINKEDIN} target="_blank" rel="noopener">
+              <a className="solid" href={LINKEDIN} target="_blank" rel="noopener">
                 LinkedIn
               </a>
             </div>
