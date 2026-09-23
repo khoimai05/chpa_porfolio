@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Résumé · Anh Cao</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+  <header class="mast">
+    <div class="letterhead">
+      <a class="nav-brand" href="index.html">Anh Cao</a>
+      <span class="letterhead-org">Purdue University</span>
+    </div>
+    <div class="letterhead-rules" aria-hidden="true"></div>
+    <nav class="nav-links" aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html" aria-current="page">Résumé</a>
+      <a href="mailto:fuonganh103@gmail.com">Mail</a>
+      <button type="button" id="theme-btn" aria-pressed="false"><span id="theme-lbl">Dark</span></button>
+    </nav>
+  </header>
+
+  <main class="wrap page-main">
+    <h2 class="section rule-draw">Résumé</h2>
+    <p class="resume-intro">Finance &amp; Business Analytics at Purdue. Preview below or download the PDF.</p>
+    <div class="resume-actions">
+      <a href="Anh%20Cao%20-%20Resume%20-%20AA%20Finance%20Analyst.pdf" download>Download PDF →</a>
+      <a href="Anh%20Cao%20-%20Resume%20-%20AA%20Finance%20Analyst.pdf" target="_blank" rel="noopener">Open in new tab</a>
+    </div>
+    <iframe
+      class="resume-frame"
+      title="Anh Cao résumé"
+      src="Anh%20Cao%20-%20Resume%20-%20AA%20Finance%20Analyst.pdf"
+    ></iframe>
+  </main>
+
+  <footer>
+    <span>Anh Cao</span>
+    <span>Résumé</span>
+  </footer>
+
+  <script src="common.js"></script>
+</body>
+</html>
