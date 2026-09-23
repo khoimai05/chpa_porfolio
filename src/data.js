@@ -1,3 +1,10 @@
+const pub = (path) =>
+  `${import.meta.env.BASE_URL}${path
+    .replace(/^\//, "")
+    .split("/")
+    .map(encodeURIComponent)
+    .join("/")}`;
+
 export const EXPERIENCE = [
   {
     id: "taib",
@@ -9,7 +16,7 @@ export const EXPERIENCE = [
       "Support sell-side M&A for founder-owned essential-services companies.",
       "Build research packs, buyer lists, and pipeline tracking across 30+ companies.",
     ],
-    img: "/images/taib.jpg",
+    img: pub("images/taib.jpg"),
     logo: true,
   },
   {
@@ -22,7 +29,7 @@ export const EXPERIENCE = [
       "Built station performance reports covering 10 airports for strategy and operations leaders.",
       "Automated the morning email so leaders were not stuck in dashboards — about five hours a day back.",
     ],
-    img: "/images/aa.jpg",
+    img: pub("images/aa.jpg"),
   },
   {
     id: "eyp",
@@ -34,7 +41,7 @@ export const EXPERIENCE = [
       "Supported Vietnam banking M&A with market research and contract review.",
       "Built Power BI views used in investment work and client presentations.",
     ],
-    img: "/images/eyp.jpg",
+    img: pub("images/eyp.jpg"),
   },
   {
     id: "ey",
@@ -46,7 +53,7 @@ export const EXPERIENCE = [
       "Summarized key contracts and ran Excel analysis for financial and operational reviews.",
       "Drafted diligence writeups for senior analysts.",
     ],
-    img: "/images/ey.jpg",
+    img: pub("images/ey.jpg"),
   },
 ];
 
@@ -72,7 +79,7 @@ export const PROJECTS = [
     meta: "Real estate · $17M underwrite · 31 units",
     blurb:
       "10-year model covering rents, costs, $5.1M renovations, and the downside case.",
-    img: "/images/pd.jfif",
+    img: pub("images/pd.jfif"),
   },
   {
     id: "oscars",
@@ -82,7 +89,7 @@ export const PROJECTS = [
       "Merged IMDb, Netflix, and Oscars. Winners usually sit at IMDb 8+ and cluster in Drama; Inception led the Netflix merge.",
     href: "https://docs.google.com/document/d/1A650gu6rw4KpnYcC_hzM8McozIFOIcSF/edit",
     link: "Report",
-    img: "/images/oscars.jfif",
+    img: pub("images/oscars.jfif"),
   },
   {
     id: "deposits",
@@ -92,7 +99,7 @@ export const PROJECTS = [
       "Contract, tenor, and calendar dims; daily accruals; GL mapped to events so maturity and rate risk sit in one place.",
     href: "https://docs.google.com/document/d/1xJ-7cDmTFHFO73sKNDKtylssqGD_QqdGDxZ4BT--AP8/edit",
     link: "Notes",
-    img: "/images/deposit.avif",
+    img: pub("images/deposit.avif"),
   },
   {
     id: "sales",
@@ -102,7 +109,7 @@ export const PROJECTS = [
       "~10,000 orders. Discount beats quantity for profit; steep discounts lift volume and squeeze margin.",
     href: "https://docs.google.com/document/d/1d_Bt7cLQ-Phu4mUKTx-kYjouMV1Svyrr/edit",
     link: "Report",
-    img: "/images/sales.avif",
+    img: pub("images/sales.avif"),
   },
   {
     id: "code",
@@ -112,7 +119,7 @@ export const PROJECTS = [
       "Mastermind: 4–6 digit code, ten guesses, red/white pins, three JSON save slots.",
     href: "https://docs.google.com/document/d/1aRweJO_Oz6HTTtAOF3Mk3Sks3vs1EWy9vRhXODGc_iQ/edit",
     link: "Writeup",
-    img: "/images/code.avif",
+    img: pub("images/code.avif"),
   },
   {
     id: "housing",
@@ -122,7 +129,7 @@ export const PROJECTS = [
       "Greater Lafayette housing pitch: LIHTC, social impact bonds, Habitat-style build vs ~$1,575 West Lafayette rent.",
     href: "https://docs.google.com/presentation/d/1FbS4ecnATLnJhI1o7ATlefvixH_mIZusEZJQIYttIsE/edit",
     link: "Slides",
-    img: "/images/purdue.avif",
+    img: pub("images/purdue.avif"),
   },
 ];
 
@@ -138,7 +145,7 @@ export const SKILLS = [
   "PowerPoint",
 ];
 
-export const RESUME = "/Anh%20Cao%20-%20Resume%20-%20AA%20Finance%20Analyst.pdf";
+export const RESUME = pub("Anh Cao - Resume - AA Finance Analyst.pdf");
 export const MAIL = "mailto:fuonganh103@gmail.com";
 export const LINKEDIN = "https://www.linkedin.com/in/anhpcao";
-export const PORTRAIT = "/images/vo%20iu.avif";
+export const PORTRAIT = pub("images/vo iu.avif");
